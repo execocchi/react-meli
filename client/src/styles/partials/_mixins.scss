@@ -1,0 +1,18 @@
+@import './variables';
+
+@mixin media($breakpoint) {
+    @if ($breakpoint == medium) {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+}
+
+@mixin container-full {
+    display: flex;
+    max-width: $content-width;
+    width: 100%;
+    margin-right: 16px;
+    margin-left: 16px;
+    flex: 1;
+}

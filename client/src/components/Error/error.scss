@@ -1,0 +1,94 @@
+.mainbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  margin: auto;
+  height: 600px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  border-radius: 3px;
+
+  &__button {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #2f2f2f;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+  }
+
+  &__button:hover {
+    background-color: #242424;
+  }
+
+  &__msg-container {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    position:absolute;
+    top: 45%;
+    width: 75%;
+  }
+
+  &__msg {
+    margin-bottom: 40px;
+  }
+}
+  
+.err {
+  color: #f3db00;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11rem;
+  position:absolute;
+  left: 20%;
+  top: 8%;
+}
+  
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #f3db00;
+}
+  
+.err2 {
+  color: #f3db00;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11rem;
+  position:absolute;
+  left: 68%;
+  top: 8%;
+}
+
+@media (max-width: 600px) {
+  .mainbox {
+    height: 400px;
+
+    &__msg-container {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+  }
+
+  .err {
+    font-size: 7rem;
+  }
+    
+  .far {
+    font-size: 5rem;
+    left: 43%;
+  }
+    
+  .err2 {
+    font-size: 7rem;
+  }
+}
+
+
+  
+ 

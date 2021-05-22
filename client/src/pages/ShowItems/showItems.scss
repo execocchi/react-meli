@@ -1,0 +1,22 @@
+@import "../../styles/partials/colours";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/mixins";
+
+.show-items {
+    @include container-full;
+    align-items: center;
+    flex-direction: column;
+
+    &__results-box {
+        flex-direction: column;
+        margin-bottom: 46px;
+        max-width: $content-width;
+    }
+
+    &__item {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0 $simple-padding;
+    }
+}

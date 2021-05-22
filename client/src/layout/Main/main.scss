@@ -1,0 +1,13 @@
+@import '../../styles/partials/colours';
+@import '../../styles/partials/variables';
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $light-grey;
+    padding-left: $simple-padding;
+    padding-right: $simple-padding;
+} 

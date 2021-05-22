@@ -1,0 +1,8 @@
+@import "../../styles/partials/mixins";
+
+.details-container {
+    @include container-full;
+    flex-direction: column;
+    align-items: center;
+}
+

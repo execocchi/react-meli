@@ -1,0 +1,5 @@
+@import '../../styles/partials/mixins';
+
+.search-container {
+    @include container-full;
+}
