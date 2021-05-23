@@ -9,11 +9,12 @@ const Error = () => (
         <div className='err2'>4</div>
         <div className='mainbox__msg-container'>
             <p className='mainbox__msg'>Ups! No existen resultados relacionados con tu busqueda</p>
-            <Link to='/'>
-                <button className='mainbox__button'>Volver al inicio</button>
+            <Link to='/' className='mainbox__link'>
+                Volver al inicio
             </Link>
         </div>
     </div>
 );
 
 export default Error;
+

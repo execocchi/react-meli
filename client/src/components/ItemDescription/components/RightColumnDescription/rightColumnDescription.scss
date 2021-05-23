@@ -1,0 +1,69 @@
+@import "../../../../styles/partials/colours";
+@import "../../../../styles/partials/variables";
+@import "../../../../styles/partials/mixins";
+
+
+.right-column {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    order: 2;
+    margin-bottom: $double-padding;
+
+    @include media(medium) {
+    justify-content: flex-start;
+    }
+
+
+    &__inner-wrapper {
+        
+    max-width: 300px;
+
+        
+    }
+    &__condition {
+        margin-bottom: $simple-padding;
+        font-size: 14px;
+    }
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: $double-padding;
+
+        @include media(medium) {
+            font-size: 24px;
+            margin-bottom: $simple-padding;
+        }
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        font-size: 46px;
+        margin-bottom: $double-padding;
+
+        @include media(medium) {
+            font-size: 36px;
+            margin-bottom: $simple-padding;
+        }
+    }
+
+    &__currency {
+        margin-right: 4px;
+
+        @include media(medium) {
+            margin-right: 4px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        background-color: $blue;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    &__button:hover {
+        background-color: #1771f8;
+    }
+}

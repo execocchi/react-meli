@@ -1,0 +1,60 @@
+@import "../../../../styles/partials/colours";
+@import "../../../../styles/partials/variables";
+@import "../../../../styles/partials/mixins";
+
+.item-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    padding-top: $simple-padding;
+    padding-bottom: $simple-padding;
+    
+  &__info {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+  }
+
+  &__price {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      margin-bottom: $double-padding;
+
+      @include media(medium) {
+          width: 100%
+      }
+  }
+
+  &__currency {
+      margin-right: 4px;
+  }
+
+  &__image {
+      margin-top: 5px;
+      margin-left: 8px;
+      height: 20px;
+  }
+
+  &__title {
+      font-size: 18px;
+      color: $black;
+  }
+
+  &__address-container {
+      display: flex;
+      margin-left: 8%;
+      padding-top: 8px;
+
+      @include media(medium) {
+          margin-left: 0;
+      }
+  }
+
+  &__address {
+      display: flex;
+      font-size: 12px;
+      color: $dark-grey;
+      justify-content: center;
+  }
+}
