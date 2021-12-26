@@ -37,7 +37,7 @@ const ItemDetails = () => {
 
                 if (!categories || (categories && categories.length === 0)) {
 
-                    const categoryId = item.category_id;
+                    ;const categoryId = item.category_id
 
                     try {
                         const categoryResponseId = await axios(`/api/categories/${categoryId}`);
